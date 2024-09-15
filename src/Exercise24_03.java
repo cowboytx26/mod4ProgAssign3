@@ -1,3 +1,11 @@
+/*
+Short Description:  This program will test the MyLinkedList java class by requesting a list of 5 numbers from the
+                    console.  Then, it will add each number into the list, but out of order from the input.  Then,
+                    it will add a new number into the list.  Then remove two numbers.  Finally, it will print out the
+                    list in forward and reverse order to validate that the list works.
+Author:  Brian Wiatrek
+Date:  September 15, 2024
+*/
 import java.util.Scanner;
 
 public class Exercise24_03 {
@@ -20,6 +28,7 @@ public class Exercise24_03 {
         list.add(0, v[0]);
         list.add(2, 10.55);
         list.remove(3);
+        list.remove(4);
 
         java.util.ListIterator<Double> iterator1 = list.listIterator();
         System.out.print("The list in forward order: ");
